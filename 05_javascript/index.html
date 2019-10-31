@@ -20,8 +20,9 @@
 
     <div class="container">
         <script>
-            //日付を表示する
-            document.write('<p class="date">20xx/x/x</p>');
+            var today = new Date();
+            var todayhtml=today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+            document.write('<p class="date">'+todayhtml+'</p>');
         </script>
         
     </div>
